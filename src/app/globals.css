@@ -46,3 +46,21 @@
   height: 8px;
   width: 8px;
 }
+/* Início da animação (elemento oculto) */
+/* Ajuste as classes conforme necessário para corresponder ao prefixo usado */
+
+.dropdown-enter {
+  opacity: 0;
+}
+.dropdown-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-out, height 300ms ease-out;
+}
+.dropdown-exit {
+  opacity: 1;
+}
+.dropdown-exit-active {
+  opacity: 0;
+  height: 0;
+  transition: opacity 300ms ease-in, height 300ms ease-in;
+}
