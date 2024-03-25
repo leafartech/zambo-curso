@@ -178,7 +178,7 @@ export default function Page() {
         >
           <div className="flex flex-col items-center gap-0">
             <h2 className="font-bold text-center my-lt sm:text-3xl text-white mb-12">Adquiri o TCC do ZERO à Aprovação, e agora?</h2>
-            <div className="flex justify-center flex-wrap sm:gap-12 gap-6">
+            <div className="flex justify-center flex-wrap sm:flex-nowrap sm:gap-12 gap-6">
               <Card
                 title="Confirmação de inscrição"
                 number="1"
