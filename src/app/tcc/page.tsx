@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 import Section from "@/components/section";
-import Heroflex from "../components/heroflex";
+import Heroflex from "../../components/heroflex";
 import Dropdown from "@/components/dropdown";
 import Button from "@/components/button";
 import Slug from "@/components/slug";
