@@ -24,7 +24,7 @@ export default function Header() {
                     <div className="">
                         <h1 className="text-white font-bold my-lt sm:text-3xl">Tenha acesso ao passo a passo prático que garante su aprovação no TCC.</h1>
                     </div>
-                    <Button>Quero ser aprovdo no TCC</Button>
+                    <Button updatedUrl="#buy">Quero ser aprovdo no TCC</Button>
                     <div className="w-24">
                         <Image
                             src="/images/scroll.gif"

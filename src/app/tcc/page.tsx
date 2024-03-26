@@ -90,7 +90,7 @@ export default function Page() {
               </Dropdown>
             </div>
             <div className="w-full flex justify-center translate-y-3 sm:translate-y-0">
-              <Button>Quero ser aprovado no tcc</Button>
+              <Button updatedUrl="#buy">Quero ser aprovado no tcc</Button>
             </div>
           </div>
         </Section>
@@ -222,7 +222,7 @@ export default function Page() {
               </Dropdown>
             </div>
             <div className="w-full flex justify-center">
-              <Button>Quero ser aprovado no tcc</Button>
+              <Button updatedUrl="#buy">Quero ser aprovado no tcc</Button>
             </div>
           </div>
         </Section>

@@ -1,9 +1,21 @@
+'use client'
+
 import Image from "next/image";
 import Button from "./button";
+import { useEffect, useState } from "react";
 
 export default function Payment() {
+    const [ updatedUrl, setUpdatedUrl] = useState('')
+    useEffect(() => {
+        let url = 'https://pay.hotmart.com/N90839656C?checkoutMode=10&offDiscount=OFFER&split=12'
+        if (typeof window !== 'undefined') {
+            const params = window.top?.location.href.split("?")[1]?.split("&").join('&')
+            setUpdatedUrl(`${url}&${params}` )
+        }
+    }, [])
+
     return (
-        <div className="relative bg-white rounded-lg flex flex-col items-center">
+        <div id="buy" className="relative bg-white rounded-lg flex flex-col items-center">
             <div className="absolute -translate-y-24 py-14 px-4 bg-[#271e13] rounded-lg shadow-xl">
                 <div className="w-32">
                     <Image
@@ -18,7 +30,7 @@ export default function Payment() {
                 <p className="text-lg text-zinc-600">De <span className="line-through">R$ 397,00</span> por apenas</p>
                 <h3 className="sm:text-6xl text-4xl font-bold">12x de R$ 19,66</h3>
                 <p className="text-lg text-zinc-600">ou R$ 197,03 à vista</p>
-                <Button>Quero ser aprovado no TCC</Button>
+                <Button updatedUrl={updatedUrl}>Quero ser aprovado no TCC</Button>
                 <div className="w-64 sm:w-80">
                     <Image
                         src="/images/bg6.png"

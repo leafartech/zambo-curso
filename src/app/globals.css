@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+* {
+  scroll-behavior: smooth
+}
+
 .my-lt {
   font-size: 1.7em;
     line-height: 1.1em;
